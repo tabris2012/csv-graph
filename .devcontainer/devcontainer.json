@@ -1,0 +1,40 @@
+// See https://aka.ms/vscode-remote/devcontainer.json for format details.
+{
+    "dockerComposeFile": [
+        "../docker-compose.yml",
+        "docker-compose.yml"
+    ],
+    "service": "dev",
+    "workspaceFolder": "/root/csv-graph",
+    "extensions": [ // 開発環境にインストールする拡張機能
+        "ms-python.python",
+        "njpwerner.autodocstring",
+    ],
+    /*"settings": { // 開発環境内のvscodeのsettings.jsonの内容
+        "editor.formatOnSave": true,
+        "python.linting.lintOnSave": true,
+        "python.linting.pylintEnabled": false,
+        "python.linting.pep8Enabled": false,
+        "python.linting.flake8Enabled": true,
+        "python.linting.flake8Args": [
+            "--ignore=W293, W504",
+            "--max-complexity",
+            "20",
+            "--max-line-length",
+            "100"
+        ],
+        "python.formatting.provider": "autopep8",
+        "python.formatting.autopep8Args": [
+            "--aggressive",
+            "--aggressive"
+        ],
+        "autoDocstring.docstringFormat": "google",
+        "python.pipenvPath": "pipenv",
+        "python.venvFolders": [
+            "${workspaceFolder}/.venv"
+        ],
+        "python.pythonPath": "${workspaceFolder}/.venv/bin/python",
+        "python.terminal.activateEnvironment": false
+    },*/
+    "shutdownAction": "none", // stopComposeだとコンテナが停止する
+}
