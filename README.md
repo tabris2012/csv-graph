@@ -1,5 +1,5 @@
 # csv-graph
-![](https://github.com/tabris2012/csv-graph/workflows/Unit%20Test/badge.svg?branch=dev)
+![](https://github.com/tabris2012/csv-graph/workflows/Unit%20Test/badge.svg)
 
 ## Remote development in VSCode attaching to dev-container
 * Install `Remote - Containers` Extension in VSCode
