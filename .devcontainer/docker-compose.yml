@@ -1,0 +1,14 @@
+version: '3'
+services:
+  dev:
+    build: .devcontainer # devcontainer.jsonで、上層のdocker-composeから見られるので、そこからの相対パス
+    container_name: cg-dev
+    volumes:
+      - ./:/root/csv-graph
+    #environment:
+    working_dir: /root/csv-graph
+    tty: true
+    networks:
+      - cg-network
+networks:
+  cg-network:
