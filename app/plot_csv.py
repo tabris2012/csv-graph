@@ -10,7 +10,7 @@ csv_dir = os.path.dirname(csv_path)
 csv_filename = os.path.splitext(os.path.basename(csv_path))[0]
 
 data_frame = pd.read_csv(csv_path)
-data_column = ['食費','交際費','日用品費','光熱費', '備考']
+data_column = ['食費','交際費','日用品費','光熱費', 'その他']
 sum_field = '計'
 data_frame[sum_field] = data_frame[data_column].sum(axis=1)
 subtract_field = '貯金'
