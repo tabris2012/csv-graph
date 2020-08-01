@@ -23,7 +23,7 @@ with PdfPages(csv_dir + '/' + csv_filename + '.pdf') as pdf:
     plt.ylabel("℃")
     plt.title(data_frame.columns[1])
     plt.xlim((1,31))
-    plt.ylim((35,38))
+    plt.ylim((35.5,37.5))
     #plt.gca().yaxis.set_major_formatter(plt.FuncFormatter(lambda x, loc: "{:,}".format(int(x))))
     plt.gca().grid(axis="y")
 
